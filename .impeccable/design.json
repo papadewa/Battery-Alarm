@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-10T00:00:00Z",
+  "title": "Design System: Battery Cat",
+  "extensions": {
+    "colorMeta": {
+      "cream": { "role": "neutral", "displayName": "Warm Cream" },
+      "ink": { "role": "neutral", "displayName": "Cat Brown" },
+      "muted": { "role": "neutral", "displayName": "Supporting Brown" },
+      "accent": { "role": "primary", "displayName": "Warm Action Brown" },
+      "low": { "role": "semantic", "displayName": "Low Battery and Error" },
+      "good": { "role": "semantic", "displayName": "Connected Power and Success" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Battery Percentage", "purpose": "QFont points on the logical 320 px widget canvas; scales with widget size." },
+      "body": { "displayName": "Native Control Text", "purpose": "Qt stylesheet pixels. Nunito is bundled in assets/Nunito.ttf." },
+      "widget-detail": { "displayName": "Runtime and Thresholds", "purpose": "Runtime is regular; thresholds are semibold." }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Cat Widget",
+      "kind": "custom",
+      "description": "Native frameless Qt window using assets/cat-clock.png and its alpha mask. Logical 320 px square; selectable 240, 320, or 400 px size. Painted percentage, state, runtime, and thresholds occupy the circular face. Drag, double-click, and context-menu interactions are preserved. No browser HTML equivalent is supplied."
+    },
+    {
+      "name": "Settings Window",
+      "kind": "custom",
+      "description": "Native Qt dialog with a scrollable single column. Opens 500 px wide with 480 px minimum width; height capped at 820 px or available screen height minus 80 px. Grouped thresholds and sound, monitoring preferences, size selection, inline feedback, and final action row."
+    },
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Native QPushButton for save and acknowledge. Accent border at rest; 2 px accent focus border. Immediate Qt state changes without motion effects."
+    },
+    {
+      "name": "Numeric and Selection Fields",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Native QSpinBox and QComboBox. A 1 px field border becomes a 2 px accent border on focus. Minimum content height is 24 px before padding and border."
+    },
+    {
+      "name": "Alarm Window",
+      "kind": "custom",
+      "description": "Separate 400 px always-on-top native dialog with a 100 px cat image, contextual title, explanation, stop action, and snooze action. Closing acknowledges the reminder; sound is finite."
+    }
+  ],
+  "narrative": {
+    "northStar": "A little companion on your desk.",
+    "overview": "The approved raster cat-clock defines the cream and peach visual world. Real battery information fills its circular face, while warm native Qt controls preserve familiar desktop operation. The voice is gentle, direct Indonesian. Windows installer delivery is primary; macOS and Linux presentation remain unverified.",
+    "keyCharacteristics": ["Approved alpha-masked cat-clock artwork", "Bundled Nunito and warm brown contrast", "Native controls and explicit feedback", "Calm at rest, brief actionable reminders"],
+    "rules": [
+      { "name": "The Text Alongside Color Rule", "body": "Every state remains understandable through text or numerical value. Connected power does not imply active charging.", "section": "colors" }
+    ],
+    "dos": ["Do preserve the approved artwork, Nunito, warm palette, and Indonesian voice.", "Do retain scrollable settings and dismissible alarms with native controls.", "Do distinguish point-based widget typography from pixel-based dialog typography."],
+    "donts": ["Don't place a rectangular frame behind the cat silhouette.", "Don't add continuous decorative animation.", "Don't claim automated charging control or verified macOS/Linux releases."]
+  }
+}

@@ -1,0 +1,1 @@
+Uninstall must preserve unrelated files.

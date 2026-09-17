@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "battery": {
+    "percent": 65,
+    "plugged": false,
+    "seconds": 3544
+  },
+  "error": null,
+  "font_loaded": true,
+  "alpha": true,
+  "rss_mb": 76.6
+}
