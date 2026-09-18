@@ -1,6 +1,57 @@
-.venv/
-build/
-dist/
-release/
+# Compiled and build artifacts
+*.pyc
 __pycache__/
-*.spec
+*.o
+*.obj
+*.out
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Distribution artifacts
+dist/
+build/
+target/
+
+# Python specific
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Backup files
+*.bak
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# MyPy cache
+.mypy_cache/
+# Pytest cache
+.pytest_cache/
